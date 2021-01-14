@@ -1,0 +1,48 @@
+
+
+
+local s = 1
+turtle.select(1)
+	turtle.Up()
+    turtle.turnLeft()
+        turtle.place()
+    turtle.turnRight()         
+        
+    turtle.forward(1)
+    turtle.turnLeft()
+        turtle.place()
+    turtle.turnLeft()
+        turtle.place()
+    turtle.turnRight()
+    turtle.turnRight()
+        turtle.placeDown()
+        turtle.placeUp()
+    turtle.forward(1)
+    
+for i=1,51 do
+
+if turtle.getItemCount(s) < 4
+then
+    s = s + 1
+    turtle.select(s)
+else
+    print("Stack Ok")
+end
+
+
+print("Section:")
+print(i)
+    turtle.turnLeft()
+        turtle.place()
+    turtle.turnRight()
+    turtle.turnRight()
+        turtle.place()
+    turtle.turnLeft()
+        turtle.placeDown()
+        turtle.placeUp() 
+    turtle.forward()
+end
+
+    
+
+
